@@ -16,7 +16,7 @@ def reduce(source, output = 0)
 
   
   while index < source.length do
-    if !source[index] = nil
+    if source[index] = nil
       output = yield(source[index], output)
     end
     index += 1
