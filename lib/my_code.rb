@@ -13,7 +13,7 @@ end
 
 def reduce(source, output = nil)
   index = 0
-  if !source[0] == false
+  if output && !source[0] == false
     output = 0
   end
   
