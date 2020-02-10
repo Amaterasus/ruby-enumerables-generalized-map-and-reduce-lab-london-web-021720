@@ -11,7 +11,7 @@ def map(source)
   return output
 end
 
-def reduce(source, output = nil)
+def reduce(source, output = false)
   index = 0
   if output && source[0] == false
     output = 0
