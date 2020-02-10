@@ -20,5 +20,8 @@ def reduce(source, output = 0)
     
     index += 1
   end
+  if output = nil
+    output = false
+  end
   output
 end
