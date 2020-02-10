@@ -11,7 +11,7 @@ def map(source)
   return output
 end
 
-def reduce(source, output = 0)
+def redu(source, output = 0)
   index = 0
 
   while index < source.length do
