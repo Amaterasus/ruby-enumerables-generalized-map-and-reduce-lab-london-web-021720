@@ -21,5 +21,6 @@ def reduce(source, output = 0)
   end
   if output = nil
     return false
+  end
   output
 end
