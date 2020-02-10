@@ -19,5 +19,7 @@ def reduce(source, output = 0)
     output = yield(source[index], output)
     index += 1
   end
+  if output = nil
+    return false
   output
 end
