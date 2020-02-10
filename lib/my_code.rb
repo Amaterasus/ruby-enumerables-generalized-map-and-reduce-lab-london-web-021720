@@ -14,11 +14,10 @@ end
 def reduce(source, output = 0)
   index = 0
 
-  
   while index < source.length do
-    if source[index] = nil
-      output = yield(source[index], output)
-    end
+    
+    output = yield(source[index], output)
+    
     index += 1
   end
   output
