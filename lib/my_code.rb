@@ -11,11 +11,9 @@ def map(source)
   return output
 end
 
-def reduce(source, output = false)
+def reduce(source, output = 0)
   index = 0
-  if output && source[0] == false
-    output = 0
-  end
+
   
   while index < source.length do
     output = yield(source[index], output)
